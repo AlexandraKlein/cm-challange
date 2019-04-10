@@ -1,4 +1,4 @@
-# Boilerplate for ES6 & SASS Web Apps
+# Hello, Critical Mass!
 
 ## Structure
 All source files belong to the `src` folder. The page itself is served off the `public` folder.
@@ -29,5 +29,3 @@ After that execute `npm start`, point your browser to http://localhost:3000 and 
 Add `--production` to any gulp task to activate production mode. In production mode all code will be minified and no sourcemaps are written.
 
 This project was initialized with the [es6-sass-boilerplate](https://github.com/freinbichler/es6-sass-boilerplate)
-# es6-sass-boilerplate
-# cm-challange
