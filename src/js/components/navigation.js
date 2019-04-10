@@ -7,18 +7,14 @@ export default class Navigation {
     this.handleRenderListItems();
     this.handleItemSelect();
     this.handleGetPosition($('li.active'));
-    $(window).resize(() => {
-      this.handleGetPosition($('li.active'))
-    });
+    $(window).resize(() => this.handleGetPosition($('li.active')));
   }
 
   handleRenderListItems() {
     const listItems = navigation.cities.map((city, index) => {
-      const activeClass = index === 0 ? 'active' : '';
-      return `<li class="${activeClass}">${city.label}</li>`
+      return `<li class="${index === 0 ? 'active' : ''}">${city.label}</li>`
     });
     $('.navigation').append(listItems)
-
   }
 
   handleGetPosition(el) {
